@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header-container ul{
+    display: flex;
+    padding-top:32px;
+    padding-bottom: 32px;
+    border:1px solid gray;
+    align-items: center;
+    justify-content: center;
+}
+strong {
+    font-weight: bold;
+}
+.header-container li{
+    width: 50px;
+    text-align: center;
+}
+.main-img ul {
+    display: flex; /* 使用 flexbox 排列 */
+}
+.main-img li {
+    flex: 1; /* 每個項目佔據 50% */
+    max-width: 100%; /* 確保最大寬度為 50% */
+    display: flex;
+    flex-direction: column; /* 使圖片和文字垂直排列 */
+    justify-content: center; /* 垂直置中 */
+}
+.main-img li img {
+    max-width: 100%; /* 圖片寬度填滿父容器 */
+    height: auto; /* 保持圖片比例 */
+    vertical-align: middle; /* 垂直置中 */
+    }
+
+.main-img li p {
+    color:gray;
+    margin-bottom :8px
+}
+h3 {
+    font-size: 1.5rem; /* 或者使用 px，例如 24px */
+    color:blue; /* 設定標題顏色 */
+    margin-bottom :8px;
+    }
+    
+h2 {
+    font-size: 1.8rem;
+    margin-bottom :8px;
+    font-weight: bold;
+}
+h4 {
+    font-size: 1.3rem ;
+    font-weight: bold;
+}
+h3 a {
+    text-decoration: none; /* 移除連結下劃線 */
+    font-size: 0.6rem;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    padding:5px;
+    margin:5px;
+}
+a {
+    text-decoration: none; /* 移除連結下劃線 */
+}
+
+.main-content-div {
+    max-width: 636px; /* 設定最大寬度 */
+    margin: auto; /* 水平置中 */
+}
+.main-content-div img {
+    max-width: 100%; /* 圖片寬度填滿父容器 */
+    height: auto; /* 保持圖片比例 */
+    margin-top:30px;
+    vertical-align: middle; /* 垂直置中 */
+}
+
+ol {
+    list-style: decimal; /* 顯示數字編號 */
+    margin-left: 20px; /* 添加左邊距，讓編號更清晰 */
+}
+.main-content-div-end p {
+    background-color: #EDEDED;
+    padding:20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 20px; /* 增加上邊距 */
+}
+.main-content-div ul {
+        list-style: disc; /* 顯示黑點 */
+        margin-left: 20px; /* 添加左邊距，讓黑點更清晰 */
+        margin-top:10px;
+}
+.main-content-div-page ul {
+    display: flex; /* 使用 flexbox 排列 */
+    flex-wrap: wrap; /* 允許換行 */
+    list-style: none; /* 移除黑點 */
+    justify-content: space-between; /* 在項目之間平均分配空間 */
+    margin-top:30px;
+}
+
+.main-content-div-page ul li a {
+    max-width:  100px; /* 限制最大寬度 */
+    color:#4B4B4B;
+    border: 1px solid #4B4B4B; /* 添加邊框 */
+    border-radius: 20px; /* 圓角邊框 */
+    padding:5px;
+}
+.main-content-div-page ul li .sp {
+    margin-left:-15px;
+    max-width: 100%; /* 限制最大寬度 */
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:1px solid gray;
+    margin-top:80px;
+    padding-top: 78px;
+    padding-bottom: 78px;
+}
+.footer-content ul {
+    display: flex;
+    
+}
+.footer-end {
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.main-content-div .sp {
+    margin-top:100px;
+
+}
+.main-content-div h3 {
+    margin-top: 30px; /* 增加上邊距 */
+}
+.main-content-div h4 {
+    margin-top: 30px; /* 增加上邊距 */
+}
+
+.main-content-div p{
+    margin-top:20px;
+}
+.main-content-div li{
+    margin-top:10px;
+}
+
+@media (max-width: 992px) {
+    .header-container ul {
+        flex-direction: column; /* 在小螢幕上改為垂直排列 */
+        height: auto; /* 自動調整高度 */
+    }
+    .main-img ul {
+        flex-direction: column; /* 在小螢幕上改為垂直排列 */
+    }
+    .main-img li {
+        max-width: 100%; /* 在小螢幕上每個項目佔據 100% 寬度 */
+    }
+}
+@media (max-width: 767px) {
+    .header-container ul {
+        flex-direction: column; /* 改為垂直排列 */
+        width: 100%; /* 確保寬度不超出視窗 */
+    }
+    .main-img ul {
+        flex-direction: column; /* 改為垂直排列 */
+        width: 100%; /* 確保寬度不超出視窗 */
+    }
+    .main-img li {
+        max-width: 100%; /* 確保每個項目不超出視窗 */
+    }
+    .footer-container {
+        flex-direction: column; /* 改為垂直排列 */
+        align-items: center; /* 垂直置中 */
+        width: 100%; /* 確保寬度不超出視窗 */
+    }
+}
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
